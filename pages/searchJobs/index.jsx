@@ -5,7 +5,7 @@ import JobCard from "../components/jobCard";
 import { jobs } from "../mockData";
 import ReactPaginate from "react-paginate";
 
-const searchJobs = () => {
+const SearchJobs = () => {
   const [jobArray, setJobArray] = useState(jobs.slice(0, 100));
   const [pageNumber, setPageNumber] = useState(0);
 
@@ -16,6 +16,7 @@ const searchJobs = () => {
     .slice(pagesVisited, pagesVisited + jobsPerPage)
     .map((job) => (
       <JobCard
+        key={job.id}
         jobTitle={job.jobTitle}
         location={job.location}
         careerArea={job.careerArea}
@@ -62,4 +63,4 @@ const searchJobs = () => {
   );
 };
 
-export default searchJobs;
+export default SearchJobs;
