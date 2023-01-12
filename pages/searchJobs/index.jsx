@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import JobCard from "../components/jobCard";
-import { jobs } from "../mockData";
+import { jobs } from "../api/mockData";
 import ReactPaginate from "react-paginate";
 
 const SearchJobs = () => {
