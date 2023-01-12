@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import {
   AiOutlineSearch,
@@ -10,10 +11,10 @@ import {
 
 const Header = () => {
   const links = [
-    { name: "WHY ALPHY", link: "/" },
-    { name: "SEARCH JOBS", link: "/" },
-    { name: "OUR PROCESS", link: "/" },
-    { name: "OUR BENEFITS", link: "/" },
+    { id: 1, name: "WHY ALPHY", link: "/" },
+    { id: 2, name: "SEARCH JOBS", link: "/searchJobs" },
+    { id: 3, name: "OUR PROCESS", link: "/ourProcess" },
+    { id: 4, name: "OUR BENEFITS", link: "/ourBenefits" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -50,12 +51,11 @@ const Header = () => {
           <div className="flex flex-col py-3 text-black md:items-end">
             <ul className="flex flex-col gap-4 px-3 py-3 text-lg md:px-0 md:py-0 md:gap-3 lg:flex-row ">
               {links.map((link) => (
-                <li
-                  key={link.name}
-                  className="hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] "
-                >
-                  {link.name}
-                </li>
+                <Link href={link.link} key={link.id}>
+                  <li className="hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] ">
+                    {link.name}
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>
