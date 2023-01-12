@@ -11,10 +11,10 @@ import {
 
 const Header = () => {
   const links = [
-    { name: "WHY ALPHY", link: "/" },
-    { name: "SEARCH JOBS", link: "/searchJobs" },
-    { name: "OUR PROCESS", link: "/ourProcess" },
-    { name: "OUR BENEFITS", link: "/ourBenefits" },
+    { id: 1, name: "WHY ALPHY", link: "/" },
+    { id: 2, name: "SEARCH JOBS", link: "/searchJobs" },
+    { id: 3, name: "OUR PROCESS", link: "/ourProcess" },
+    { id: 4, name: "OUR BENEFITS", link: "/ourBenefits" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -53,7 +53,7 @@ const Header = () => {
               {links.map((link) => (
                 <Link href={link.link}>
                   <li
-                    key={link.name}
+                    key={link.id}
                     className="hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] "
                   >
                     {link.name}
