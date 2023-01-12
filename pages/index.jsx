@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import LearnMoreCard from "./components/learnMoreCard";
@@ -79,10 +80,10 @@ const Home = () => {
               alt=""
               className="w-40 mb-5 h-44"
             />
-            <h1 className="text-lg text-center text-[#fb8500]">
+            <h1 className="text-lg text-center text-[#fb8500] cursor-pointer">
               Agility - Increase Speed
             </h1>
-            <p className="px-12 text-center ">
+            <p>
               "We anticipate and respond to changes in our environment with a
               bias for taking action, NOW."
             </p>
