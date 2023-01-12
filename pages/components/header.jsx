@@ -51,11 +51,8 @@ const Header = () => {
           <div className="flex flex-col py-3 text-black md:items-end">
             <ul className="flex flex-col gap-4 px-3 py-3 text-lg md:px-0 md:py-0 md:gap-3 lg:flex-row ">
               {links.map((link) => (
-                <Link href={link.link}>
-                  <li
-                    key={link.id}
-                    className="hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] "
-                  >
+                <Link href={link.link} key={link.id}>
+                  <li className="hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] ">
                     {link.name}
                   </li>
                 </Link>
