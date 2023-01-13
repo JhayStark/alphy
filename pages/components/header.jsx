@@ -21,7 +21,7 @@ const Header = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 w-full shadow-md bg-gradient-to-r from-cyan-700 via-cyan-900 to-cyan-700">
+    <div className="fixed top-0 left-0 w-full shadow-md bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-700">
       <div className="items-center justify-between px-0 py-4 md:py-2 md:px-2 lg:px-10 md:flex">
         <div className="flex flex-row items-center justify-start pl-2 cursor-pointer ">
           <img

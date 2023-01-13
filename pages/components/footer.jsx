@@ -9,16 +9,16 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="flex-row items-end justify-center hidden gap-5 p-20 mt-8 text-white bg-black md:flex ">
+      <div className="flex-row items-end justify-center hidden gap-5 p-20 mt-8 text-white bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800 md:flex ">
         <div className="flex flex-col items-center text-sm">
           <img
-            src="https://res.cloudinary.com/jhay/image/upload/v1673428355/vectrus/globe-logo_klcqko.gif"
+            src="https://res.cloudinary.com/jhay/image/upload/v1673640054/vectrus/output-onlinegiftools_2_j93xrt.gif"
             alt="logo"
             className="w-16 h-20 mr-5"
           />
           <div className="mr-5">
             <img
-              src="https://res.cloudinary.com/jhay/image/upload/v1673428355/vectrus/text-logo_kwv7yf.gif"
+              src="https://res.cloudinary.com/jhay/image/upload/v1673640161/vectrus/output-onlinegiftools_3_e6g71w.gif"
               alt=""
               className="w-48 "
             />
