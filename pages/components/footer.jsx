@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="flex-row items-end justify-center hidden gap-5 p-20 mt-8 text-white bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800 md:flex ">
+      <div className="flex-row items-end justify-center hidden gap-5 p-20 text-white bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800 md:flex ">
         <div className="flex flex-col items-center text-sm">
           <img
             src="https://res.cloudinary.com/jhay/image/upload/v1673640054/vectrus/output-onlinegiftools_2_j93xrt.gif"
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </ul>
       </div>
-      <div className="flex flex-col items-center py-6 mt-5 text-white bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800 md:hidden">
+      <div className="flex flex-col items-center py-6 text-white bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800 md:hidden">
         <img
           src="https://res.cloudinary.com/jhay/image/upload/v1673642201/vectrus/output-onlinegiftools_4_ra3pkq.gif"
           alt=""

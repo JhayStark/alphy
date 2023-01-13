@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className="mx-8 mt-24 md:mt-28">
+      <div className="px-8 py-24 md:pt-28 bg-slate-200">
         <div className="flex flex-col items-center bg-work-with-alphy-bg bg-cover bg-center justify-around py-3 bg-blend-darken  text-white bg-gray-300 h-[30rem] px-7">
           <h1 className="text-4xl text-[#fb8500] text-center md:text-6xl">
             Work with Alphy
