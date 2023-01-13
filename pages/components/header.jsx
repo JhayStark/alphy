@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import {
   AiOutlineSearch,
@@ -17,6 +18,7 @@ const Header = () => {
     { id: 4, name: "OUR BENEFITS", link: "/ourBenefits" },
   ];
 
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
     <div className="fixed top-0 left-0 w-full shadow-md bg-gradient-to-r from-cyan-700 via-cyan-900 to-cyan-700">
@@ -52,7 +54,11 @@ const Header = () => {
             <ul className="flex flex-col gap-4 px-3 py-3 text-lg md:px-0 md:py-0 md:gap-3 lg:flex-row ">
               {links.map((link) => (
                 <Link href={link.link} key={link.id}>
-                  <li className="hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] ">
+                  <li
+                    className={`hover:underline hover:text-[#beb800] cursor-pointer font-medium decoration-[#beb800] ${
+                      router.pathname == link.link && ` text-[#beb800]`
+                    }`}
+                  >
                     {link.name}
                   </li>
                 </Link>

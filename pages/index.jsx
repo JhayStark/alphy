@@ -12,7 +12,7 @@ const Home = () => {
       <div className="mx-8 mt-24 md:mt-28">
         <div className="flex flex-col items-center bg-work-with-alphy-bg bg-cover bg-center justify-around py-3 bg-blend-darken  text-white bg-gray-300 h-[30rem] px-7">
           <h1 className="text-4xl text-[#fb8500] text-center md:text-6xl">
-            Work with Vectrus
+            Work with Alphy
           </h1>
           <p className="text-xl text-center md:text-4xl">
             Alphy offers exciting and rewarding career opportunities and a
