@@ -69,9 +69,9 @@ const Footer = () => {
           </div>
         </ul>
       </div>
-      <div className="flex flex-col items-center py-6 mt-5 text-white bg-black md:hidden">
+      <div className="flex flex-col items-center py-6 mt-5 text-white bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800 md:hidden">
         <img
-          src="https://res.cloudinary.com/jhay/image/upload/v1673436179/vectrus/ezgif.com-gif-maker_gcv6k5.gif"
+          src="https://res.cloudinary.com/jhay/image/upload/v1673642201/vectrus/output-onlinegiftools_4_ra3pkq.gif"
           alt=""
           className="p-10"
         />
