@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const JobCard = ({ jobTitle, location, careerArea }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex flex-col border-b-2 md:p-4 hover:bg-stone-100 ">
+    <div className="flex flex-col border-b-2 border-gray-300 md:p-4 hover:bg-stone-200 ">
       <div className="flex flex-col justify-between w-full gap-5 px-5 py-10 md:gap-0 md:items-center md:grid md:grid-cols-4 ">
         <div className="flex flex-row">
           <div
@@ -26,9 +27,11 @@ const JobCard = ({ jobTitle, location, careerArea }) => {
           <h2 className="text-lg">Career Area</h2>
           <p>{careerArea}</p>
         </div>
-        <button className="py-3 bg-blue-500 lg:px-10 md:ml-4 ">
-          Apply Now
-        </button>
+        <Link href="/searchJobs/apply">
+          <button className="py-3 bg-blue-500 lg:px-10 md:ml-4 ">
+            Apply Now
+          </button>
+        </Link>
       </div>
       <p className={`${open ? `block` : `hidden`}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus

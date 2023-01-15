@@ -31,7 +31,7 @@ const SearchJobs = () => {
   return (
     <div>
       <Header />
-      <div className="mx-5 mt-24 lg:mx-8 md:mt-28 ">
+      <div className="px-5 pt-24 lg:px-8 md:pt-28 bg-slate-100 ">
         <div className="flex flex-col lg:mx-20">
           {displayJobs}
           <div className="flex justify-center m-5 item-center">
