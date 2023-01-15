@@ -28,7 +28,7 @@ const JobCard = ({ jobTitle, location, careerArea }) => {
           <p>{careerArea}</p>
         </div>
         <Link href="/searchJobs/apply">
-          <button className="py-3 bg-blue-500 lg:px-10 md:ml-4 ">
+          <button className="p-3 bg-blue-500 lg:px-10 md:ml-4 hover:opacity-80 ">
             Apply Now
           </button>
         </Link>
